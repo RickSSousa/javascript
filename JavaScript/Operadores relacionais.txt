@@ -1,0 +1,10 @@
+Operadores relacionais
+
+identidade: 5 == '5' (true) 
+No JS o op de igualdade não valida o tipo
+
+op de igualdade restrita: 5 === '5' (false)
+Ele identifica se é identico, inclusive o tipo do valor
+
+x !== y (true)
+o x é desigual restrito do y

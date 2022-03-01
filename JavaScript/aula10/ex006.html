@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            font: normal 20pt arial;
+            background: rgb(145, 57, 57);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--Evento: tudo aquilo q pode acontecer com o elemento
+    Eventos com o mouse:
+    mouseenter = mover o mouse para dentro da div
+    mousemove = mover o mouse dentro da div
+    mousedown = clicar e segurar dentro da div
+    mouseup = momento em q soltar o botão segurado do mouse
+    click = clicar simples
+    mouseout = sair da div com o mouse 
+
+    Função = bloco de linhas que só serão executados depois de um evento
+    function(parametros(opcional))
+    {
+    }
+    -->
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> <!--onclick = evento de clicar...-->
+        interaja...
+    </div>
+
+    <script>
+        //quando eu clicar na minha div, o obj 'a' será criado e ele será a ligação com o elemento 'area' do html e mudará o conteúdo dele
+        var a = window.document.getElementById('area')
+        // chamada de evento opcional, sem precisar poluir a div lá em cima:
+        // a.addEventListener('click', clicar)
+        // a.addEventListener('mouseenter', entrar)
+        // a.addEventListener('mouseout', sair)
+
+        function clicar(){
+            a.innerText = 'clicou'
+            a.style.background = 'darkblue'
+        }
+        function entrar(){
+           a.innerText = 'entrou'
+        }
+        function sair(){
+            a.innerText = 'saiu'
+            a.style.background = 'rgb(145, 57, 57)'
+        }
+    </script>
+</body>
+</html>

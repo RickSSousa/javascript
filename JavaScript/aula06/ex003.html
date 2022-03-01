@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body{
+            background-color: rgb(118, 118, 182);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: rgb(158, 22, 151);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        //number + number para adição
+        //string + string para concatenação 
+        //O window Prompt retorna uma string, então precisa ser convertido:
+        //number.parseInt, parseFloat ou só Number
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var soma = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ` + soma)
+        //converter número pra string n.ToString() ou String(n)
+
+        // concatenação 'string' + variavel
+        // interpolação `String ${variavel}`
+    </script>
+</body>
+</html>

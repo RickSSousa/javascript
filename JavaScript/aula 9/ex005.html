@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(94, 27, 172);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <div name="ssg">Clique em mim</div>
+    <div class="ssg">Clique em mim</div>
+    <script>
+        //navegando pela árvore DOM em JS
+        //navegando pelas tags (por Marca)
+        var p1 = window.document.getElementsByTagName('p')[0]//buscou a 1ª tag <p>
+        p1.style.color = 'blue'
+        //navegando pelo body
+        var corpo = window.document.body
+        corpo.style.background = 'black'
+        
+        document.write(p1.innerHTML)//mostra o conteúdo html do p1 com tags
+        document.write(p1.innerText)//mostra só o testo da p1, sem tags
+
+        //navegando por ID getElementById()
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+        //comando completo, sem criar a avariável: window.document.getElementById('msg').innerText = 'Ola'
+        
+        //navegando por Nome getElementsByName()
+        var p = window.document.getElementsByName('ssg')[0]
+        p.innerText = 'Olá!'
+
+        //navegando por ID getElementsByClassName()
+        window.document.getElementsByClassName('ssg')[0].innerText = 'Opa'
+
+        //navegando por Seletor (seleciona através d elementos CSS)
+        var k = window.document.querySelector('div#msg') //div usa # e class usa .
+        k.style.color = 'red'
+    </script>
+</body>
+</html>

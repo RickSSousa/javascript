@@ -1,0 +1,9 @@
+operador ternário:
+
+média >= 7/0 ? aprovado : reprovado
+(verificação)/(o que acontece se der verdadeiro)/(O que acontece se der falso)
+
+x=8
+var res = x%2==0?5:9
+
+a variável res receberá 5 ou 9
