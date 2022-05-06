@@ -1,0 +1,19 @@
+var = vc pd declarar várias vzs uma mesma veriável:
+var b = 3
+var b = 30
+
+let = vc só pd declarar apenas 1x
+
+const = o valor definido não poderá ser mudado:
+const c = 1
+
+c = 2 //vai dar erro
+
+var = só tem 2 escopos: o global e dentro de função
+
+bloco = é delimitado por {}
+
+let = permite que dentro de um bloco seja outro escopo,
+podendo ser diferenciado em global ou dentro de algum escopo
+não necessariamente função.
+

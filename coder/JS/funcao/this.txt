@@ -1,0 +1,3 @@
+funções escritas padrão pode mudar o valor do this, pois sairá do escopo global (window)
+
+mas se for uma função arrow, será estritamente igual ao window pois estará no escopo global
